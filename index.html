@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sistema de Cadastro de Alunos</title>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>Sistema de Cadastro de Alunos</h1>
+
+<h2>Lista de Alunos</h2>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Email</th>
+    <th>Idade</th>
+    <th>Curso</th>
+  </tr>
+  <tr>
+    <td>Maria Silva</td>
+    <td>maria.silva@example.com</td>
+    <td>22</td>
+    <td>Sistemas de Informação</td>
+  </tr>
+  <tr>
+    <td>João Souza</td>
+    <td>joao.souza@example.com</td>
+    <td>20</td>
+    <td>Engenharia da Computação</td>
+  </tr>
+</table>
+
+<h2>Cadastro de Novo Aluno</h2>
+
+<form>
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome"><br><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="idade">Idade:</label><br>
+  <input type="number" id="idade" name="idade"><br><br>
+  <label for="curso">Curso:</label><br>
+  <select id="curso" name="curso">
+    <option value="ciencia-da-computacao">Ciência da Computação</option>
+    <option value="sistemas-de-informacao">Sistemas de Informação</option>
+    <option value="engenharia-da-computacao">Engenharia da Computação</option>
+  </select><br><br>
+  <input type="submit" value="Cadastrar">
+</form>
+
+</body>
+</html>
